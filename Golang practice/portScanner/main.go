@@ -5,9 +5,10 @@ import (
 )
 
 func main() {
-	// endPort := 1024
-	// printOnlyOpen := true
-	// port.GetAllPorts("52.219.62.94", endPort, printOnlyOpen)
+	serverEndPoint := "127.0.0.1"
+	endPort := 1024
+	printOnlyOpen := true
+	port.GetAllPorts(serverEndPoint, endPort, printOnlyOpen)
 
-	port.GetAPort("52.219.62.94", "tcp", 5432)
+	port.GetAPort(serverEndPoint, "tcp", 5432)
 }
